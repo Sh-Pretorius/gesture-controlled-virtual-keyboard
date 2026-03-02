@@ -1,0 +1,39 @@
+{
+  "1_STATIC": "E",
+  "1_RIGHT": "T",
+  "1_LEFT": "A",
+  "1_DOWN": "O",
+
+  "2_STATIC": "I",
+  "2_RIGHT": "N",
+  "2_LEFT": "R",
+  "2_DOWN": "S",
+
+  "3_STATIC": "H",
+  "3_RIGHT": "L",
+  "3_LEFT": "D",
+  "3_DOWN": "C",
+
+  "4_STATIC": "U",
+  "4_RIGHT": "M",
+  "4_LEFT": "F",
+  "4_DOWN": "P",
+
+  "5_STATIC": "G",
+  "5_RIGHT": "W",
+  "5_LEFT": "Y",
+  "5_DOWN": "B",
+
+  "6_STATIC": "V",
+  "6_RIGHT": "K",
+  "6_LEFT": "J",
+  "6_DOWN": "X",
+
+  "7_STATIC": "Q",
+  "7_RIGHT": "Z",
+
+  "9_STATIC": "SPACE",
+  "9_RIGHT": "ENTER",
+  "9_LEFT": "BACKSPACE",
+  "8_STATIC": "Mode switch"
+}
