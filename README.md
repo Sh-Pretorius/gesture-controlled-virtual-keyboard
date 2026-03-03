@@ -1,6 +1,6 @@
-# Touchless Desk: a Gesture Controlled Virtual Keyboard
-## Table of Contents
-1. Project Introduction(#project introduction)
+# Touchless Desk: a Gesture Controlled Virtual Keyboard :desktop_computer::raised_hand_with_fingers_splayed:
+## :ledger:Table of Contents
+1. Project Introduction
 2. Project Overview and Features
 3. Tech Stack
 4. Techinical Features
@@ -60,7 +60,7 @@ A modular, pipeline-based architecture with state-driven control.
 - mouse_callibration.py → Calibration system
 - key_gesture_layout.json → Custom gesture mapping
 
-# 7. Skills Demonstrated
+## 7. Skills Demonstrated
 - Computer Vision
 - Signal Processing
 - Real-Time Systems
