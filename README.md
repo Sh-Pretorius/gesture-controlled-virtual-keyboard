@@ -6,13 +6,10 @@
 4. Techinical Features
 5. Getting Started
 6. Architecture
-7. Skills Demonstrated
-8. Hand Gesture Guide
+7. Hand Gesture Guide
 
 ## 1. Project Introduction
-Built a real-time computer vision system that converts hand gestures into mouse and keyboard input, enabling fully touchless interaction with a Windows computer using only a webcam. Implemented adaptive One Euro filtering to reduce jitter and designed a two-stage gesture confirmation engine to prevent false triggers.
-
-Enables touchless computer interaction. Users control mouse and keyboard functions without touching hardware. Useful in situaions where hands are dirty, occupied, or with public/shared devices.
+Built a real-time computer vision system that converts hand gestures into mouse and keyboard input, enabling fully touchless interaction with a Windows computer using only a webcam. Implemented adaptive One Euro filtering to reduce jitter and designed a two-stage gesture confirmation engine to prevent false triggers. Enables touchless computer interaction. Users control mouse and keyboard functions without touching hardware. Useful in situaions where hands are dirty, occupied, or with public/shared devices.
 
 ## 2. Features
 - Control the mouse using hand movement
@@ -54,23 +51,14 @@ Enables touchless computer interaction. Users control mouse and keyboard functio
   - Character output mapped from JSON
     
 ## 6. Architecture
-A modular, pipeline-based architecture with state-driven control.
-- main.py → Main program loop
-- gesture_detector.py → Gesture recognition logic
-- mouse_controller.py → Mouse smoothing & OS control
-- mouse_callibration.py → Calibration system
-- key_gesture_layout.json → Custom gesture mapping
+- main.py: Main program loop
+- gesture_detector.py: Gesture recognition logic
+- mouse_controller.py: Mouse smoothing & OS control
+- mouse_callibration.py: Calibration system
+- key_gesture_layout.json: Custom gesture mapping
 
-## 7. Skills Demonstrated
-- Computer Vision
-- Signal Processing
-- Real-Time Systems
-- State Machines
-- OS-level Input Control
-- Algorithm Design
-
-## 8. Hand Gesture Guide
-The digit + swipe system works by first figuring out which number you’re showing using hand landmarks from MediaPipe. It checks which fingers are up or down to determine a digit from 0–9. To avoid accidental inputs, the digit has to stay steady for a short moment before it’s confirmed. After that, the system watches how your fingertip moves over a few frames to detect a direction like left, right, down, or if you keep it still. That digit and direction combo (for example, 1 + RIGHT) creates a unique key that’s matched in a JSON file to a letter or action. When designing the JSON layout, I looked at English letter frequency and assigned the most common letters — like E, T, A, O, I, and N — to the easiest gestures, usually lower digits with little or no movement. The idea was to reduce hand fatigue and make typing feel more natural and efficient over time. 
+## 7. Hand Gesture Guide
+The digit + swipe system works by first figuring out which number you’re showing using hand landmarks from MediaPipe. It checks which fingers are up or down to determine a digit from 0–9. To avoid accidental inputs, the digit has to stay steady for a short moment before it’s confirmed. After that, the system watches how your fingertip moves over a few frames to detect a direction like left, right, down, or if you keep it still. That digit and direction combo (for example, 1 + RIGHT) creates a unique key that’s matched in a JSON file to a letter or action. When designing the JSON layout, I looked at the most frequently used English letter and assigned the most common letters — like E, T, A, O, I, and N — to the easiest gestures, usually lower digits with little or no movement. The idea was to reduce hand fatigue and make typing feel more natural and efficient over time. 
 
 ### 🫰 Basic Gestures
 - :fist: **Digit 0:** Fist *(All fingers are folded)*
